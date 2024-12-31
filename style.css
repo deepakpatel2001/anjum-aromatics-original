@@ -187,6 +187,7 @@ html {
     max-width: 1440px;
     margin-inline: auto;
     text-align: justify;
+    margin-top: 50px;
 }
 
 .welcome-anjumaromatics-description{
@@ -227,7 +228,6 @@ html {
 }
 
 .featured-products {
-    margin-top: 20px;
     text-align: center;
 }
 
