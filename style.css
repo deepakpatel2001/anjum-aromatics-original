@@ -29,7 +29,7 @@ html {
 /* header navbar  */
 
 .header{
-    width: 100%;
+    width: 1440px;
     background-color: inherit;
     height: 150px;
     border-bottom: 2px solid var(--primary-color);
@@ -37,11 +37,11 @@ html {
 
 .navigation-bar {
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 20px;
-    max-width: 1440px;
     margin-inline: auto;
     background-color: inherit;
 }
@@ -185,12 +185,13 @@ html {
 /* welcome anjum aromatics */
 
 .welcome-anjumaromatics{
-    max-width: 100%;
+    max-width: 1440px;
     margin-top: 20px;
     text-align: center;
     margin-inline: auto;
     background-color: var(--primary-color);
     border-radius: 10px;
+    margin-inline: 20px;
 }
 
 .welcome-anjumaromatics h3{
