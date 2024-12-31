@@ -259,6 +259,7 @@ html {
     align-items: center;
     width: 100%;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-inline: auto;
     padding: 0 20px;
 }
