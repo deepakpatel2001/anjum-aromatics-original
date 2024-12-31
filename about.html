@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Anjum Aromatics</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <div class="logo">
+                <a href="https://www.anjumaromatics.com/">
+                    <img src="images/Anjum-Logo.png" alt="Anjum Aromatics">
+                </a>
+            </div>
+            <h1 class="company-name">Anjum Aromatics</h1>
+            <div>
+                <ul class="navigation-links">
+                    <li class="navigation-list"><a href="/index.html">Home Page</a></li>
+                    <li class="navigation-list"><a href="/about.html">Company Profile</a></li>
+                    <li class="navigation-list"><a href="/products.html">Our Products</a></li>
+                    <li class="navigation-list"><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="company-intro-information">
+        <div class="company-image-container">
+            <img src="images/company-photo.jpg" alt="">
+        </div>
+        <div class="company-detailed-information">
+            <h2 class="company-intro-heading">Company Introduction</h2>
+            <p class="company-paragraph"> <b>Anjum Aromatics</b> is one of a kind Essential Oils and Sandalwood Products supplying
+                company in <b>Indore, Madhya
+                    Pradesh
+                    (India),</b> having <span class="years">seven</span> years of wonderful experience in meeting desires of
+                customers, who are engaged in
+                production of
+                cosmetics & food items and rendering aromatherapy sessions. We have a soul-satisfying collection of <b>Lemongrass
+                    Oil,
+                    Palmarosa Essential Oil, Sandalwood Essential Oil</b>
+                and numerous other products, which are processed in a
+                manner that they
+                provide huge benefits to users. Our pure and essential products are in the finest quality because we use
+                natural and
+                pure ingredients in their making.
+            </p>
+            <p class="company-paragraph">Anjum Aromatics has been manufacturing premium essential oils for over four decades, specializing in sandalwood,
+            flowers, herbs, woods, and spices. Using traditional steam distillation methods, we create pure, 100% natural oils with
+            therapeutic properties that promote healing, joy, and serenity. Our products combine cutting-edge research with
+            traditional wisdom, ensuring the highest quality. With a manufacturing center in Indore, India, and a branch in Dubai,
+            Anjum's essential oils are trusted across Southeast Asia, the Middle East, and Europe for their purity and effectiveness
+            in aromatherapy.</p>
+        </div>
+    </main>
+
+
+    <script>
+        const years = document.querySelector('.years');
+        const getYear = new Date();
+        const fullYear = getYear.getFullYear()-2014;
+        years.innerHTML = fullYear;
+    </script>
+</body>
+
+</html>
