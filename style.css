@@ -61,9 +61,9 @@ html {
 .company-name {
     color: var(--primary-color);
     font-size: 40px;
-    font-family: var(--text-family);
+    font-family: var(--heading-text-family);
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .navigation-links {
@@ -115,11 +115,12 @@ html {
 /* main section with video */
 
 .video-text-overlay {
-    height: 800px;
+    max-height: 1440px;
     padding-inline: 20px;
     position: relative;
     margin-inline: auto;
     max-width: 1440px;
+    margin-top: 40px;
 }
 
 .video-div {
@@ -133,24 +134,21 @@ html {
 }
 
 .video-overlay {
-    height: 92.5%;
-    width: 97.4%;
-    left: 19px;
-    top: 30px;
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
+    height: 100%;
+    top: -2px;
+    left: 20px;
+    right: 20px;
     z-index: 9999;
     display: flex;
-    justify-content: start;
     flex-direction: column;
     font-family: var(--text-family);
-    padding: 50px;
-    margin-inline: auto;
-    
+    padding: 0 50px;
 }
 
 .video-heading {
-    margin-top: 250px;
+    margin-top: 270px;
     color: var(--secondary-color);
     font-size: 64px;
     line-height: 84px;
@@ -186,10 +184,9 @@ html {
 /* welcome anjum aromatics */
 
 .welcome-anjumaromatics{
-    width: 1440px;
+    max-width: 1440px;
     margin-inline: auto;
     text-align: justify;
-    
 }
 
 .welcome-anjumaromatics-description{
@@ -252,6 +249,7 @@ html {
 .featured-content-data {
     margin-top: 30px;
     display: flex;
+    row-gap: 20px;
     width: 100%;
     flex-direction: column;
 }
@@ -309,10 +307,6 @@ html {
     width: 100%;
 }
 
-.content-div-second {
-    margin-top: 30px;
-}
-
 /* core values */
 
 .core-values {
@@ -334,6 +328,7 @@ html {
     display: flex;
     justify-content: space-between;
     padding-inline: 20px;
+    flex-wrap: wrap;
 }
 
 .core-value {
@@ -361,6 +356,7 @@ html {
     margin-top: 50px;
     max-width: 1440px;
     margin-inline: auto;
+    flex-wrap: wrap;    
 }
 
 .featured-main-products-section h3{
@@ -372,15 +368,16 @@ html {
 
 .featured-main-products-section-container{
     margin-top: 30px;
-    width: 1440px;
+    width: 100%;
     padding-inline: 20px;
     display: flex;
     justify-content: space-between;
     margin-inline: auto;
+    flex-wrap: wrap;
 }
 
 .featured-main-products{
-    max-width: 306px;
+    min-width: 306px;
     max-height: 436px;
 }
 
@@ -478,7 +475,7 @@ footer{
 .list-heading h3{
     font-size: 32px;
     font-family: var(--heading-text-family);
-    color: #FECDA0;
+    color: var(--secondary-color);
 }
 
 .footer-links{
@@ -493,7 +490,7 @@ footer{
 }
 
 .footer-links li a{
-    color: whitesmoke;
+    color: var(--secondary-color);
     font-family: var(--paragraph-text-family);
     font-size: 18px;
     text-decoration: none;
@@ -503,7 +500,7 @@ footer{
     width: 90%;
     margin-inline: auto;
     margin: 10px 0;
-    color: #DEE1E6;
+    color: var(--secondary-color);
     max-width: 1440px;
     margin-inline: auto;
 }
@@ -515,7 +512,7 @@ footer{
 }
 
 .rights-title{
-    color: whitesmoke;
+    color: var(--secondary-color);
     font-size: 14px;
     line-height: 22px;
     font-family: var(--paragraph-text-family);
