@@ -18,7 +18,12 @@
                 </a>
             </div>
             <h1 class="company-name">Anjum Aromatics</h1>
-            <div>
+            <div class="menu-icons">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="navigation-container">
                 <ul class="navigation-links">
                     <li class="navigation-list"><a href="/index.html">Home Page</a></li>
                     <li class="navigation-list"><a href="/about.html">Company Profile</a></li>
@@ -84,12 +89,12 @@
                     </div>
                 </div>
                 <div class="prod-image">
-                    <img src="/images/featured-image1.png" alt="">
+                    <img src="/images/featured-image1.jpg" alt="">
                 </div>
             </div>
             <div class="content-data-divs content-div-second">
                 <div class="prod-image">
-                    <img src="/images/featured-image2.png" alt="">
+                    <img src="/images/featured-image2.jpg" alt="">
                 </div>
                 <div class="prod-details">
                     <h3 class="prod-details-heading">Aromatic Mist</h3>
@@ -101,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content-data-divs content-div-first">
+            <div class="content-data-divs content-div-third">
                 <div class="prod-details">
                     <h3 class="prod-details-heading">Sandalwood Elixir</h3>
                     <p class="prod-details-paragraph">
@@ -112,7 +117,7 @@
                     </div>
                 </div>
                 <div class="prod-image">
-                    <img src="/images/featured-image1.png" alt="">
+                    <img src="/images/featured-image3.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -192,6 +197,15 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        const menuContainer = document.querySelector('.menu-icons')
+
+        menuContainer.addEventListener('click', ()=> {
+            menuContainer.classList.toggle('change')
+        })
+    </script>
 </body>
 
 </html>
