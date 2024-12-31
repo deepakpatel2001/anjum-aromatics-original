@@ -29,15 +29,16 @@ html {
 /* header navbar  */
 
 .header{
-    width: 1440px;
+    width: 100%;
     background-color: inherit;
     height: 150px;
     border-bottom: 2px solid var(--primary-color);
+    margin-inline: auto;
 }
 
 .navigation-bar {
     height: 100%;
-    width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -185,32 +186,35 @@ html {
 /* welcome anjum aromatics */
 
 .welcome-anjumaromatics{
-    max-width: 1440px;
-    margin-top: 20px;
-    text-align: center;
+    width: 1440px;
     margin-inline: auto;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    margin-inline: 20px;
+    text-align: justify;
+    
 }
 
-.welcome-anjumaromatics h3{
+.welcome-anjumaromatics-description{
+    background-color: var(--primary-color);
+    margin: 20px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    color: var(--secondary-color);
+}
+
+.welcome-anjumaromatics-description h3{
     font-size: 40px;
+    text-align: center;
     font-family: var(--heading-text-family);
     color: var(--secondary-color);
     line-height: 68px;
     padding-top: 20px;
 }
 
-.welcome-details{
-    height: 100%;
-    max-width: 1300px;
-    margin-inline: auto;
-    text-align: justify;
+.welcome-anjumaromatics-description p{
+    margin-top: 10px;
     font-size: 18px;
-    color: var(--secondary-color);
     line-height: 28px;
-    padding-bottom: 50px;
+    font-family: var(--paragraph-text-family);
+    padding-inline: 30px;
 }
 
 /* featured products */
@@ -221,6 +225,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 .featured-products {
@@ -253,8 +259,8 @@ html {
 .content-data-divs {
     display: flex;
     align-items: center;
-    max-width: 1440px;
-    column-gap: 100px;
+    width: 100%;
+    justify-content: space-around;
     margin-inline: auto;
     padding: 0 20px;
 }
@@ -319,15 +325,15 @@ html {
 .core-values h3{
     font-size: 40px;
     font-family: var(--heading-text-family);
-    color: var(--primary-color);
+    color: var(--primary-color);    
 }
 
 .core-values-divs{
     margin-top: 20px;
-    max-width: 1300px;
-    margin-inline: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-inline: 20px;
 }
 
 .core-value {
@@ -366,7 +372,8 @@ html {
 
 .featured-main-products-section-container{
     margin-top: 30px;
-    width: 1300px;
+    width: 1440px;
+    padding-inline: 20px;
     display: flex;
     justify-content: space-between;
     margin-inline: auto;
@@ -444,6 +451,8 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    margin-inline: auto;
 }
 
 .footer-logo{
