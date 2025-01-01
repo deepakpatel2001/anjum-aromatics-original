@@ -588,7 +588,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 988px) {
+@media only screen and (max-width: 900px) {
     .welcome-anjumaromatics-description h3 {
         font-size: 36px;
         line-height: 55px;
@@ -635,7 +635,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 858px) {
+@media only screen and (max-width: 850px) {
     .navigation-container {
         display: none;
     }
@@ -646,14 +646,14 @@ footer {
     }
 
     .video-heading {
-        margin-top: 126px;
+        margin-top: 130px;
         font-size: 34px;
-        line-height: 30px;
+        line-height: 55px;
     }
 
     .video-paragraph {
         font-size: 14px;
-        line-height: 9px;
+        line-height: 15px;
     }
 
     .video-button {
@@ -698,7 +698,9 @@ footer {
     }
 }
 
-@media only screen and (max-width: 320px) {
+
+/* design for mobile */
+@media only screen and (max-width: 400px) {
     .header {
         height: 91px;
     }
