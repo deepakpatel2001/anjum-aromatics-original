@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -635,6 +635,7 @@ footer {
     }
 }
 
+/* for tablets */
 @media only screen and (max-width: 850px) {
     .navigation-container {
         display: none;
@@ -698,6 +699,174 @@ footer {
     }
 }
 
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .logo {
+        height: 49px;
+        width: 65px;
+    }
+    .company-name {
+        font-size: 19px;
+    }
+
+    .video-text-overlay {
+        margin-top: 30px;
+    }
+
+    .video-heading {
+        margin-top: 65px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .video-overlay {
+        padding: 0 20px;
+    }
+    .video-paragraph {
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .video-button {
+        width: 80px;
+        margin-top: 8px;
+    }
+    .video-button a {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .welcome-anjumaromatics {
+        margin-top: 30px;
+    }
+
+    .welcome-anjumaromatics-description h3 {
+        font-size: 27px;
+        line-height: 31px;
+        max-width: 230px;
+        margin-inline: auto;
+    }
+
+    .welcome-anjumaromatics-description {
+        padding-bottom: 16px;
+    }
+
+    .welcome-anjumaromatics-description p {
+        font-size: 10px;
+        line-height: 16px;
+        padding-inline: 10px;
+    }
+    .featured-products-section {
+        margin-top: 30px;
+    }
+
+    .featured-products-heading {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .featured-products-paragraph {
+        font-size: 14px;
+        max-width: 355px;
+        line-height: 20px;
+    }
+
+    .content-data-divs .prod-details {
+        height: 100%;
+        max-width: 150px;
+    }
+
+    .prod-details-heading {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .prod-details-paragraph {
+        width: 100%;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .prod-details-button {
+        height: 26px;
+        width: 90px;
+    }
+
+    .prod-details-button a {
+        font-size: 13px;
+    }
+
+    .prod-image {
+        max-width: 204px;
+        min-width: 192px;
+    }
+
+    .core-values {
+        margin-top: 50px;
+    }
+
+    .core-value {
+        width: 110px;
+    }
+
+    .core-values h3 {
+        font-size: 32px;
+    }
+
+    .core-values-paragraph {
+        font-size: 11px;
+    }
+
+    .featured-main-products-section {
+        margin-top: 30px;
+    }
+
+    .featured-main-products-section h3 {
+        font-size: 32px;
+    }
+
+    .featured-main-products {
+        max-width: 110px;
+    }
+
+    .featured-main-products-name {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .featured-main-products-description {
+        font-size: 11px;
+        line-height: 15px;
+        margin-top: 5px;
+    }
+
+    .fetaured-main-product-redirect {
+        margin-top: 8px;
+    }
+
+    .fetaured-main-product-redirect a {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .list-heading h3 {
+        display: none;
+    }
+
+    .footer-links {
+        column-gap: 15px;
+    }
+
+    .footer-links li a {
+        font-size: 12px;
+    }
+
+    .reserved-rights {
+        margin-top: 2px;
+    }
+
+    .social-icons {
+        margin-top: 7px;
+    }
+}
 
 /* design for mobile */
 @media only screen and (max-width: 400px) {
@@ -750,7 +919,7 @@ footer {
     }
 
     .video-button {
-        width: 85px;
+        width: 60px;
         margin-top: 6px;
         display: flex;
         justify-content: center;
@@ -805,7 +974,7 @@ footer {
     }
 
     .content-data-divs {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .prod-details {
