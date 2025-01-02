@@ -50,11 +50,70 @@ html {
     padding-inline: 20px;
     margin-inline: auto;
     background-color: inherit;
+    position: relative;
+}
+
+/* sub nesting */
+.sub-links {
+    display: none;
+    position: absolute;
+    bottom: -70px;
+    left: -20px;
+    text-align: center;
+    font-family: var(--paragraph-text-family);
+    font-size: 13px;
+    min-width: 200px;
+    z-index: 999999;
+    background-color: var(--primary-color);
+}
+
+.sub-links hr,
+.super-links-sandalwood-oil hr {
+    height: 2px;
+    border-color: var(--secondary-color);
+}
+
+.sub-links .header-products-link a,
+.super-links-sandalwood-oil .header-products-link a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    color: var(--secondary-color);
+    transition: background-color 0.1s linear;
+}
+
+.sub-links .header-products-link a:hover,
+.super-links-sandalwood-oil .header-products-link a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.our-product-list:hover .sub-links {
+    display: block;
+}
+
+/* super nesting */
+.super-links-sandalwood-oil {
+    display: none;
+    position: absolute;
+    left: -227px;
+    top: 0;
+    background-color: var(--primary-color);
+    min-width: 200px;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sandalwood-links:hover .super-links-sandalwood-oil {
+    display: block;
 }
 
 .logo {
     height: 50px;
-    width: 80px;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -83,7 +142,7 @@ html {
     font-family: var(--paragraph-text-family);
 }
 
-.navigation-list::before {
+/* .navigation-list::before {
     content: '';
     width: 100%;
     height: 2px;
@@ -102,7 +161,7 @@ html {
 .navigation-list:hover::before {
     opacity: 1;
     transform: scaleX(1);
-}
+} */
 
 .navigation-list a {
     text-decoration: none;
@@ -141,6 +200,10 @@ html {
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+.phone-screen-visible {
+    display: none;
 }
 
 /* main section with video */
@@ -338,11 +401,36 @@ html {
 
 .prod-image {
     max-width: 540px;
-    min-width: 300px;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 16px;
 }
 
 .prod-image img {
     width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.horizontal-featured-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    z-index: -9999;
+}
+
+.horizontal-image1 {
+    position: relative;
+    bottom: -580px;
+}
+
+.horizontal-image2 {
+    position: relative;
+    top: -470px;
+}
+
+.horizontal-image3 {
+    position: relative;
+    top: -40px;
 }
 
 /* core values */
@@ -635,9 +723,52 @@ footer {
     }
 }
 
+@media only screen and (min-width: 851px) and (max-width: 900px) {
+    .company-name {
+        font-size: 18px;
+    }
+
+    .list-heading h3 {
+        font-size: 22px;
+    }
+}
+
 /* for tablets */
 @media only screen and (max-width: 850px) {
+    .navigation-bar {
+        position: relative;
+    }
     .navigation-container {
+        display: none;
+        position: absolute;
+        right: 18px;
+        background-color: var(--primary-color);
+        bottom: -75px;
+        z-index: 99999;
+        width: 185px;
+        padding: 5px 0;
+        border-radius: 5px;
+    }
+
+    .navigation-list {
+        height: 25px;
+        color: var(--secondary-color);
+    }
+
+    .navigation-list a {
+        color: var(--secondary-color);
+    }
+
+    .phone-screen-visible {
+        display: block;
+    }
+
+    .navigation-links {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .header-products-link {
         display: none;
     }
 
@@ -699,7 +830,32 @@ footer {
     }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 730px) {
+    .video-heading {
+        margin-top: 110px;
+    }
+
+    .prod-image {
+        max-width: 148px;
+        min-width: 174px;
+    }
+
+    .core-value {
+        width: 175px;
+        max-width: 189px;
+    }
+
+    .featured-main-products {
+        width: 175px;
+        max-width: 189px;
+    }
+
+    .list-heading h3 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
     .logo {
         height: 49px;
         width: 65px;
@@ -795,8 +951,8 @@ footer {
     }
 
     .prod-image {
-        max-width: 204px;
-        min-width: 192px;
+        max-width: 174px;
+        min-width: 169px;
     }
 
     .core-values {
@@ -824,7 +980,8 @@ footer {
     }
 
     .featured-main-products {
-        max-width: 110px;
+        width: 110px;
+        max-width: 150px;
     }
 
     .featured-main-products-name {
@@ -869,7 +1026,7 @@ footer {
 }
 
 /* design for mobile */
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 200px) and (max-width: 400px) {
     .header {
         height: 91px;
     }

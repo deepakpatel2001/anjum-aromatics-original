@@ -26,10 +26,36 @@
             <div class="navigation-container">
                 <ul class="navigation-links">
                     <li class="navigation-list"><a href="/index.html">Home Page</a></li>
+                    <hr class="phone-screen-visible">
                     <li class="navigation-list"><a href="/about.html">Company Profile</a></li>
-                    <li class="navigation-list"><a href="/products.html">Our Products</a></li>
+                    <hr class="phone-screen-visible">
+                    <li class="navigation-list our-product-list">
+                        <a href="/products.html">Our Products</a>
+                        <div class="sub-links">
+                            <div class="header-products-link sandalwood-links">
+                                <a href="#">Sandalwood Products </a>
+                                <div class="super-links-sandalwood-oil">
+                                    <p><a href="#">Sandalwood Oil</a></p>
+                                    <hr>
+                                    <p><a href="#">Sandalwood Sticks & Billets</a></p>
+                                    <hr>
+                                    <p><a href="#">Sandalwood Powder</a></p>
+                                    <hr>
+                                    <p><a href="#">Sandalwood Chips</a></p>
+                                    <hr>
+                                    <p><a href="#">Sandalwood De-Oiled Powder</a></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="header-products-link"><a href="#">Essential Oil</a></div>
+                            <hr>
+                            <div class="header-products-link"><a href="#">Premium Perfumes</a></div>
+                        </div>
+                    </li>
+                    <hr class="phone-screen-visible">
                     <li class="navigation-list"><a href="/contact.html">Contact Us</a></li>
                 </ul>
+
             </div>
         </nav>
     </header>
@@ -51,23 +77,31 @@
 
     <section class="welcome-anjumaromatics">
         <div class="welcome-anjumaromatics-description">
-                <h3>Welcome to Anjum Aromatics</h3>
-                <p>For over four decades, Anjum Group has been a pioneer in crafting premium essential oils. With a perfect blend of
-                    expertise and tradition, we take pride in producing the finest sandalwood oils and a diverse range of essential oils
-                    sourced ethically from India, Indonesia, Australia, and Africa.
-                
-                    Our range includes sandalwood oils and essential oils for perfumery, skincare, aromatherapy, and medicinal
-                    applications,
-                    meeting the needs of various industries. With an unwavering focus on quality, our products have earned trust and
-                    recognition across Europe, Southeast Asia, and the Middle East.
-                    In 2014, we expanded our vision by establishing Anjum Aromatics in Bangalore, with the goal of becoming a leading
-                    global
-                    supplier of essential oils. Today, our operations include a modern manufacturing unit in Indore SEZ, a branch in
-                    Hyderabad, and a global head office in Dubai, reinforcing our commitment to quality and innovation on a global
-                    scope.</p>
-            </div>
+            <h3>Welcome to Anjum Aromatics</h3>
+            <p>For over four decades, Anjum Group has been a pioneer in crafting premium essential oils. With a perfect
+                blend of
+                expertise and tradition, we take pride in producing the finest sandalwood oils and a diverse range of
+                essential oils
+                sourced ethically from India, Indonesia, Australia, and Africa.
+
+                Our range includes sandalwood oils and essential oils for perfumery, skincare, aromatherapy, and
+                medicinal
+                applications,
+                meeting the needs of various industries. With an unwavering focus on quality, our products have earned
+                trust and
+                recognition across Europe, Southeast Asia, and the Middle East.
+                In 2014, we expanded our vision by establishing Anjum Aromatics in Bangalore, with the goal of becoming
+                a leading
+                global
+                supplier of essential oils. Today, our operations include a modern manufacturing unit in Indore SEZ, a
+                branch in
+                Hyderabad, and a global head office in Dubai, reinforcing our commitment to quality and innovation on a
+                global
+                scope.</p>
+        </div>
     </section>
 
+    <hr class="horizontal-featured-line horizontal-image1">
     <section class="featured-products-section">
         <div class="featured-products">
             <h3 class="featured-products-heading">Featured Products</h3>
@@ -91,11 +125,13 @@
                 <div class="prod-image">
                     <img src="/images/featured-lady1.jpg" alt="">
                 </div>
+                
             </div>
             <div class="content-data-divs content-div-second">
                 <div class="prod-image">
                     <img src="/images/featured-pharma2.jpg" alt="">
                 </div>
+                
                 <div class="prod-details">
                     <h3 class="prod-details-heading">Aromatic Mist</h3>
                     <p class="prod-details-paragraph">
@@ -119,9 +155,13 @@
                 <div class="prod-image">
                     <img src="/images/featured-fragrance3.jpg" alt="">
                 </div>
+                
             </div>
         </div>
     </section>
+    
+    <hr class="horizontal-featured-line horizontal-image2">
+    <hr class="horizontal-featured-line horizontal-image3">
 
     <section class="core-values">
         <h3>Core Values</h3>
@@ -188,22 +228,31 @@
         <hr class="horizontal-line">
         <div class="reserved-rights">
             <div class="rights-title">
-                <p>All &copy copyrights reserved by Anjum       Aromatics.
+                <p>All &copy copyrights reserved by Anjum Aromatics.
                 </p>
             </div>
             <div class="social-icons">
-                <a href=""><img src="images/footer-Logo-facebook.png" alt="facebook"></a>
-                <a href=""><img src="images/footer-Logo-linkedin.png" alt="linkedin"></a>
+                <a href=""><img src="images/fb-logo.png" alt="facebook" width="19.02" height="19.08"></a>
+                <a href=""><img src="images/linkedin-logo.png" alt="linkedin" width="19.02" height="19.08"></a>
+                <a href=""><img src="images/insta-logo.png" alt="instagram" width="19.02" height="19.08"></a>
             </div>
         </div>
     </footer>
 
-
     <script>
         const menuContainer = document.querySelector('.menu-icons')
+        const navigationContainer = document.querySelector('.navigation-container')
 
-        menuContainer.addEventListener('click', ()=> {
+        let openMenu = true;
+        menuContainer.addEventListener('click', () => {
             menuContainer.classList.toggle('change')
+            if (openMenu) {
+                navigationContainer.style.display = 'block'
+                openMenu = false
+            } else {
+                navigationContainer.style.display = 'none'
+                openMenu = true
+            }
         })
     </script>
 </body>
