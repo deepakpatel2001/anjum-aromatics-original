@@ -488,6 +488,11 @@ html {
     margin-top: 5px;
 }
 
+.horizontal-core-values {
+    position: relative;
+    top: 32px;
+}
+
 /* customer reviews */
 
 .featured-main-products-section {
@@ -1210,6 +1215,10 @@ footer {
         font-size: 11px;
     }
 
+    .horizontal-core-values {
+        top: 20px;
+    }
+
     .featured-main-products-section {
         margin-top: 30px;
     }
@@ -1430,15 +1439,15 @@ footer {
         font-size: 25px;
     }
 
-    .horizontal-image1{
+    .horizontal-image1 {
         bottom: -223px;
     }
 
-    .horizontal-image2{
+    .horizontal-image2 {
         top: -113px;
     }
 
-    .horizontal-image3{
+    .horizontal-image3 {
         top: 7px;
     }
 
@@ -1452,6 +1461,10 @@ footer {
 
     .core-values-paragraph {
         font-size: 9px;
+    }
+
+    .horizontal-core-values {
+        top: 15px;
     }
 
     .featured-main-products-section {
