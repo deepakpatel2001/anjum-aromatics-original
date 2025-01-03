@@ -15,6 +15,7 @@ html {
     background-image: url(images/anjum-website-background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 :root {
@@ -57,14 +58,16 @@ html {
 .sub-links {
     display: none;
     position: absolute;
-    bottom: -70px;
+    bottom: -79px;
     left: -20px;
     text-align: center;
     font-family: var(--paragraph-text-family);
-    font-size: 13px;
+    font-size: 14px;
     min-width: 200px;
+    border: 2px solid var(--primary-color);
     z-index: 999999;
     background-color: var(--primary-color);
+    border-radius: 5px;
 }
 
 .sub-links hr,
@@ -82,7 +85,8 @@ html {
     width: 100%;
     font-weight: 600;
     color: var(--secondary-color);
-    transition: background-color 0.1s linear;
+    transition: background-color 0.1s linear, color 0.1s linear,
+        border-radius 0.1s linear;
 }
 
 .sub-links .header-products-link a:hover,
@@ -99,16 +103,24 @@ html {
 .super-links-sandalwood-oil {
     display: none;
     position: absolute;
-    left: -227px;
-    top: 0;
+    left: -250px;
+    top: -2px;
     background-color: var(--primary-color);
     min-width: 200px;
+    border-radius: 5px;
+    /* border: 2px solid var(--primary-color); */
     z-index: 9999;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .sandalwood-links:hover .super-links-sandalwood-oil {
     display: block;
+}
+
+.super-links-essential-oil {
+    left: -203px;
+    top: 28px;
 }
 
 .logo {
@@ -425,12 +437,12 @@ html {
 
 .horizontal-image2 {
     position: relative;
-    top: -470px;
+    top: -456px;
 }
 
 .horizontal-image3 {
     position: relative;
-    top: -40px;
+    top: -35px;
 }
 
 /* core values */
@@ -654,7 +666,7 @@ footer {
 
 /* media queries */
 
-@media only screen and (max-width: 1079px) {
+@media only screen and (min-width: 900px) and (max-width: 1079px) {
     .company-name {
         font-size: 25px;
     }
@@ -670,13 +682,6 @@ footer {
         line-height: 20px;
     }
 
-    .prod-image {
-        max-width: 340px;
-        min-width: 300px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
     .welcome-anjumaromatics-description h3 {
         font-size: 36px;
         line-height: 55px;
@@ -721,8 +726,26 @@ footer {
     .featured-main-products {
         max-width: 266px;
     }
+
+    .prod-image {
+        max-width: 340px;
+        min-width: 300px;
+    }
+
+    .horizontal-image1 {
+        bottom: -513px;
+    }
+
+    .horizontal-image2 {
+        top: -389px;
+    }
+
+    .horizontal-image3 {
+        top: -25px;
+    }
 }
 
+/* this is only for responsive for tablet & greater than that */
 @media only screen and (min-width: 851px) and (max-width: 900px) {
     .company-name {
         font-size: 18px;
@@ -731,6 +754,78 @@ footer {
     .list-heading h3 {
         font-size: 22px;
     }
+
+    .video-heading {
+        margin-top: 156px;
+        font-size: 47px;
+        line-height: 45px;
+    }
+
+    .video-paragraph {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .video-button {
+        width: 115px;
+        margin-top: 4px;
+    }
+
+    .featured-products-section {
+        margin-top: 18px;
+    }
+
+    .featured-products-heading {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .featured-products-paragraph {
+        font-size: 15px;
+        max-width: 502px;
+        line-height: 21px;
+    }
+
+    .prod-details-heading {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    .prod-details-paragraph {
+        width: 387px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .prod-image {
+        max-width: 282px;
+    }
+
+    .core-values h3 {
+        font-size: 38px;
+    }
+
+    .core-value {
+        width: 250px;
+    }
+
+    .featured-main-products {
+        width: 250px;
+    }
+
+    .horizontal-image1 {
+        position: relative;
+        top: 404px;
+    }
+
+    .horizontal-image2 {
+        top: -328px;
+    }
+
+    .horizontal-image3 {
+        position: relative;
+        top: -26px;
+    }
 }
 
 /* for tablets */
@@ -738,6 +833,7 @@ footer {
     .navigation-bar {
         position: relative;
     }
+
     .navigation-container {
         display: none;
         position: absolute;
@@ -768,13 +864,33 @@ footer {
         gap: 2px;
     }
 
-    .header-products-link {
-        display: none;
-    }
-
     .menu-icons {
         display: block;
         cursor: pointer;
+    }
+
+    .header-products-link {
+        display: block;
+    }
+
+    .super-links-sandalwood-oil {
+        display: none;
+    }
+
+    .sub-links {
+        display: none;
+        position: absolute;
+        bottom: -62px;
+        left: -200px;
+        z-index: 999999;
+    }
+
+    .our-product-list:hover .sub-links {
+        display: block;
+    }
+
+    .sandalwood-links:hover .super-links-sandalwood-oil {
+        display: none;
     }
 
     .video-heading {
@@ -793,6 +909,42 @@ footer {
         margin-top: 12px;
     }
 
+    .welcome-anjumaromatics {
+        margin-top: 35px;
+    }
+
+    .welcome-anjumaromatics-description {
+        padding-bottom: 15px;
+    }
+
+    .welcome-anjumaromatics-description h3 {
+        font-size: 34px;
+        line-height: 41px;
+        padding-top: 15px;
+    }
+
+    .welcome-anjumaromatics-description p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        padding-inline: 25px;
+    }
+
+    .featured-products-section {
+        margin-top: 35px;
+    }
+
+    .featured-products-heading {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .featured-products-paragraph {
+        font-size: 18px;
+        max-width: 582px;
+        line-height: 23px;
+    }
+
     .prod-image {
         max-width: 252px;
         min-width: 221px;
@@ -807,6 +959,18 @@ footer {
         width: 350px;
         font-size: 14px;
         line-height: 21px;
+    }
+    .horizontal-image1 {
+        bottom: -396px;
+    }
+
+    .horizontal-image2 {
+        top: -299px;
+    }
+
+    .horizontal-image3 {
+        position: relative;
+        top: -26px;
     }
 
     .core-value {
@@ -831,13 +995,55 @@ footer {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 730px) {
+    .company-name {
+        font-size: 33px;
+    }
     .video-heading {
         margin-top: 110px;
+    }
+
+    .welcome-anjumaromatics-description h3 {
+        font-size: 32px;
+        line-height: 28px;
+        padding-top: 18px;
+    }
+
+    .welcome-anjumaromatics-description p {
+        margin-top: 11px;
+        font-size: 14px;
+        line-height: 23px;
+        padding-inline: 20px;
+    }
+
+    .featured-products-section {
+        margin-top: 10px;
+    }
+
+    .featured-products-heading {
+        font-size: 34px;
+        line-height: 46px;
     }
 
     .prod-image {
         max-width: 148px;
         min-width: 174px;
+    }
+
+    .prod-details-button {
+        height: 31px;
+        width: 106px;
+    }
+
+    .prod-details-button a {
+        font-size: 12px;
+    }
+
+    .horizontal-image1 {
+        bottom: -290px;
+    }
+
+    .horizontal-image2 {
+        top: -219px;
     }
 
     .core-value {
@@ -862,6 +1068,27 @@ footer {
     }
     .company-name {
         font-size: 19px;
+    }
+
+    .navigation-container {
+        bottom: -75px;
+        z-index: 99999;
+        width: 156px;
+        padding: 2px 0;
+        font-size: 12px;
+    }
+
+    .sub-links .header-products-link a,
+    .super-links-sandalwood-oil .header-products-link a {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .sub-links {
+        bottom: -66px;
+        left: -200px;
+        z-index: 999999;
+        padding: 2px;
     }
 
     .video-text-overlay {
@@ -890,8 +1117,8 @@ footer {
         font-size: 10px;
     }
 
-    .welcome-anjumaromatics {
-        margin-top: 30px;
+    .featured-products-section {
+        margin-top: 10px;
     }
 
     .welcome-anjumaromatics-description h3 {
@@ -910,8 +1137,20 @@ footer {
         line-height: 16px;
         padding-inline: 10px;
     }
+
+    .horizontal-image1 {
+        bottom: -309px;
+    }
+
+    .horizontal-image2 {
+        top: -215px;
+    }
+
+    .horizontal-image3 {
+        top: -19px;
+    }
     .featured-products-section {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .featured-products-heading {
@@ -956,7 +1195,7 @@ footer {
     }
 
     .core-values {
-        margin-top: 50px;
+        margin-top: 15px;
     }
 
     .core-value {
@@ -964,7 +1203,7 @@ footer {
     }
 
     .core-values h3 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .core-values-paragraph {
@@ -976,7 +1215,7 @@ footer {
     }
 
     .featured-main-products-section h3 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .featured-main-products {
@@ -1002,6 +1241,10 @@ footer {
     .fetaured-main-product-redirect a {
         padding: 5px;
         font-size: 10px;
+    }
+
+    footer {
+        margin-top: 20px;
     }
 
     .list-heading h3 {
@@ -1054,6 +1297,31 @@ footer {
 
     .change .bar3 {
         transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .navigation-container {
+        bottom: -95px;
+        z-index: 99999;
+        width: 116px;
+        padding: 2px 0;
+        font-size: 10px;
+    }
+
+    .sub-links {
+        bottom: -61px;
+        left: -155px;
+        z-index: 999999;
+        padding: 2px;
+        display: none;
+        font-size: 10px;
+        min-width: 150px;
+    }
+
+    .sub-links .header-products-link a,
+    .super-links-sandalwood-oil .header-products-link a {
+        padding: 7px;
+        font-size: 10px;
+        z-index: 999999;
     }
 
     .video-text-overlay {
@@ -1111,7 +1379,7 @@ footer {
     }
 
     .featured-products-section {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .featured-products-heading {
@@ -1128,10 +1396,6 @@ footer {
 
     .featured-content-data {
         margin-top: 20px;
-    }
-
-    .content-data-divs {
-        justify-content: space-around;
     }
 
     .prod-details {
@@ -1164,6 +1428,18 @@ footer {
 
     .core-values h3 {
         font-size: 25px;
+    }
+
+    .horizontal-image1{
+        bottom: -223px;
+    }
+
+    .horizontal-image2{
+        top: -113px;
+    }
+
+    .horizontal-image3{
+        top: 7px;
     }
 
     .core-values {
@@ -1228,6 +1504,10 @@ footer {
 
     .list-heading h3 {
         display: none;
+    }
+
+    footer {
+        margin-top: 20px;
     }
 
     .footer-links {
